@@ -1,0 +1,172 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: 700 !important;
+    background-image: url("assets/backgrounds/wallpaper.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 80em;
+    width: 100%;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+.intro {
+    max-width: 50em;
+    text-align: left;
+    animation: slideIn 1.5s ease-in-out;
+    margin-top: 5em;
+}
+
+.intro h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nameImage {
+    display: block;
+    max-width: 50em; 
+    height: auto;
+    margin: 0.1em 0;
+    animation: slideIn 1.5s ease-in-out; 
+}
+
+.intro p {
+    margin-top: 1.5em;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+.myImage {
+    margin-left: auto;
+    max-width: 30em;
+}
+
+.myImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 710px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.myImage img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.buttons-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    animation: slideIn 1.5s ease-in-out;
+    margin-top: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttons a img {
+    width: auto;
+    height: 4em;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    box-shadow: 2px 2px 7px 1px #000000;
+    object-fit: contain;
+}
+
+.buttons a img:hover {
+    opacity: 0.8;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5em;
+}
+
+.icons a img {
+    width: 3em;
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro, .myImage {
+        max-width: 100%;
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .myImage {
+        order: -1;
+    }
+
+    .buttons-icons {
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .buttons a img {
+        width: 5em;
+        height: auto;
+    }
+
+    .icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 5.5em;
+    }
+
+    .icons a img {
+        width: 3em;
+        height: auto;
+    }
+}

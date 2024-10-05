@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="constyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>ScrapBook-Creations</title>
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">
+            <a href="#"><img src="assets/words/ScrapBook.png" alt="ScrapBook Logo" class="nameImage"></a>
+        </div>
+        <nav class="nav-links">
+            <ul class="d-flex">
+                <li class="mx-2"><a href="Home.html"><img src="assets/buttons/topHome.png" alt="Home"></a></li>
+                <li class="mx-2"><a href="Creations.html"><img src="assets/buttons/topCreations.png" alt="Creations"></a></li>
+                <li class="mx-2"><a href="Afilliations.html"><img src="assets/buttons/topAff.png" alt="Affiliations"></a></li>
+                <li class="mx-2"><a href="Me.html"><img src="assets/buttons/topAboutMe.png" alt="About Me"></a></li>
+                <li class="mx-2"><a href="Contact.html"><img src="assets/buttons/topContact.png" alt="Contact Me"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="assets/words/Contact.png" alt="Contact" class="header-image">
+        <div class="transparent-container">
+            <p>Any queries? Send an email below!</p>
+        </div>
+
+        <div class="transparent-container">
+            <h2>Enter Your Message!</h2>
+            <form action="https://formspree.io/f/myzygezz" method="POST" class="mt-4">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message:</label>
+                    <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </main> 
+</body>
+</html>
